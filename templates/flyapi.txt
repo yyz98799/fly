@@ -1,0 +1,203 @@
+首页展示总表  list
+方法：get
+返回结果：
+    正确
+    {
+        "code": 200,
+        "error": null,
+        "data":[
+            {
+                "no": 1,
+                "content": "wwawawaawawawawawaw",
+                "time": "2019.4.1"
+            },
+            {
+                "no": 2,
+                "content": "wwawawaawawawawawaw",
+                "time": "2019.4.3"
+            },
+            ...
+        ]
+    }
+    错误
+    {
+        "code": 201,
+        "error": "error！",
+        "data": null
+    }
+
+
+各地区投诉量排序   area
+参照：https://echarts.baidu.com/examples/editor.html?c=bar-label-rotation&tdsourcetag=s_pcqq_aiomsg&qq-pf-to=pcqq.c2c
+方法：get
+返回结果：
+	正确
+	{
+		"code": 200,
+		"error": null,
+		"data":
+		{
+			"areas": ["上城区","下城区","y城区","k城区","p城区","z城区"];
+			"amount": [19325, 23438, 31000, 121594, 134141, 681807]
+		}
+	}
+	错误
+	{
+		"code": 201,
+		"error": "error！",
+		"data": null
+	}
+各地区投诉量排序   depart
+参照：https://echarts.baidu.com/examples/editor.html?c=bar-label-rotation&tdsourcetag=s_pcqq_aiomsg&qq-pf-to=pcqq.c2c
+方法：get
+返回结果：
+    正确
+    {
+        "code": 200,
+        "error": null,
+        "data":
+        {
+            "departs": ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"],
+            "amount": [19325, 23438, 31000, 121594, 134141, 681807]
+        }
+    }
+    错误
+    {
+        "code": 201,
+        "error": "error！",
+        "data": null
+    }
+
+
+最近的投诉量趋势图（按时间 每天） 简单折线图  amount
+参照：https://echarts.baidu.com/examples/editor.html?c=line-simple&tdsourcetag=s_pcqq_aiomsg&qq-pf-to=pcqq.c2c
+方法：get
+url：
+返回结果：
+	正确
+	{
+		"code": 200,
+		"error": null,
+		"data":
+		{
+			"times": ["2019.4.1","2019.4.2","2019.4.3","2019.4.4","2019.4.5","2019.4.6","2019.4.7"],
+			"amount": [5, 20, 36, 10, 10, 20, 3],
+		}
+	}
+	错误
+	{
+		"code": 201,
+		"error": "error！",
+		"data": null
+	}
+
+
+按类别分，投诉量  饼1   type
+参照：https://echarts.baidu.com/examples/editor.html?c=pie-nest&qq-pf-to=pcqq.c2c
+方法：get
+url：
+返回结果：
+	正确
+	{
+		"code": 200,
+		"error": null,
+		"data":{
+		    "types": [
+		        'QQ',
+		        '微信',
+		    ]
+		    "datas": [
+                {
+                    "type": '出行',
+                    "value": 5,
+                },
+                {
+                    "type": '扰民',
+                    "value": 20,
+                },
+                ...
+            ]
+		}
+	}
+	错误
+	{
+		"code": 201,
+		"error": "error！",
+		"data": null
+	}
+
+办理时效  简单柱状
+参照：https://echarts.baidu.com/examples/editor.html?c=bar-tick-align&tdsourcetag=s_pcqq_aiomsg&qq-pf-to=pcqq.c2c
+——各 地区 平均办理时效（投诉日期与回复日期计算） areaeffic
+返回结果：
+    正确
+    {
+        "code": 200,
+        "error": null,
+        "data":
+        {
+            "areas": ["上城区","下城区","上城区","下城区","上城区","下城区"],
+            "values": [5, 20, 36, 10, 10, 20]
+        }
+    }
+    错误
+    {
+        "code": 201,
+        "error": "error！",
+        "data": null
+    }
+——各 部门 平均办理时效                      departeffic
+返回结果：
+    正确
+    {
+        "code": 200,
+        "error": null,
+        "data":
+        {
+            "departs": ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"],
+            "values": [5, 20, 36, 10, 10, 3]
+        }
+    }
+    错误
+    {
+        "code": 201,
+        "error": "error！",
+        "data": null
+    }
+
+
+数据来源排行  饼2  from
+参照：https://echarts.baidu.com/examples/editor.html?c=pie-doughnut
+返回结果：
+	正确
+	{
+		"code": 200,
+		"error": null,
+		"data":{
+		    "types": [
+		        'QQ',
+		        '微信',
+		        ...
+		    ]
+		    "datas": [
+                {
+                    "name": 'QQ',
+                    "value": 5,
+                },
+                {
+                    "name": '微信',
+                    "value": 20,
+                },
+                ...
+            ]
+		}
+	}
+	错误
+	{
+		"code": 201,
+		"error": "error！",
+		"data": null
+	}
+
+
+用户情感分析（热词）    hotspot
