@@ -22,197 +22,213 @@
     <script src="../static/js/echarts.common.min.js"></script>
     <link rel="stylesheet" href="../static/css/sss.css">
 
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/sss.css">
+
+
 
 
 </head>
 <body>
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->
-    <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
+<!-- Add your site or application content here -->
+<!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
 
-    <!--&lt;!&ndash;自己的header&ndash;&gt;-->
-    <!--<header id="flyheader" class="flyheader">-->
-        <!--<div style="position: relative;">-->
-            <!--<a class="logolink" href="https://github.com/zjutfly/fly"> F L Y</a>-->
-            <!--<div class="headlink">-->
-                <!--<a class="login" href="https://login.bce.baidu.com/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a>-->
-                <!--<a class="register" href="https://login.bce.baidu.com/reg.html?tpl=bceplat&amp;from=portal" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</header>-->
+<!--&lt;!&ndash;自己的header&ndash;&gt;-->
+<!--<header id="flyheader" class="flyheader">-->
+<!--<div style="position: relative;">-->
+<!--<a class="logolink" href="https://github.com/zjutfly/fly"> F L Y</a>-->
+<!--<div class="headlink">-->
+<!--<a class="login" href="https://login.bce.baidu.com/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a>-->
+<!--<a class="register" href="https://login.bce.baidu.com/reg.html?tpl=bceplat&amp;from=portal" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</header>-->
 
-    <div id="wrapper">
-        <div class="overlay"></div>
+<div id="wrapper">
+    <div class="overlay"></div>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        F L Y
-                    </a>
-                </li>
-                <li>
-                    <a href="/list" id="listbutton refreshbutton"><i class="glyphicon glyphicon-tags"></i> 主页/投诉总览</a>
-                </li>
-                <li>
-                    <a href="#" id="amountbutton"><i class="glyphicon glyphicon-signal"></i> 投诉总量趋势</a>
-                </li>
-                <li>
-                    <a href="#" id="areabutton"><i class="glyphicon glyphicon-home"></i> 投诉量地区分布</a>
-                </li>
-                <li>
-                    <a href="#" id="departbutton"><i class="glyphicon glyphicon-home"></i> 投诉量部门分布</a>
-                </li>
-                <li>
-                    <a href="#" id="typebutton"><i class="glyphicon glyphicon-move"></i> 投诉类别分布</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 办理时效<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">Dropdown heading</li>
-                        <li><a href="#" id="areaefficbutton"> 按地区分</a></li>
-                        <li><a href="#" id="departefficbutton"> 按部门分</a></li>
-                        <!--<li><a href="#">部门分布</a></li>-->
-                        <!--<li><a href="#">部门分布</a></li>-->
-                        <!--<li><a href="#">部门分布</a></li>-->
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" id="frombutton"><i class="glyphicon glyphicon-stats"></i> 数据来源排行</a>
-                </li>
-                <li>
-                    <a href="#" id="hotspotbutton"><i class="glyphicon glyphicon-heart"></i> 用户热词分析</a>
-                </li>
-                <li>
-                    <a href="#">&nbsp;</a>
-                </li>
-                <li>
-                    <a href="#">&nbsp;</a>
-                </li>
-                <li >
-                    <a href="#"><span class="glyphicon glyphicon-user"></span> 登录</a>
-                </li>
-                <li >
-                    <a href="#"><span class="glyphicon glyphicon-tag"></span> 注册</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#" id="mainbutton">
+                    F L Y
+                </a>
+            </li>
+            <li>
+                <a href="#" id="listbutton refreshbutton"><i class="glyphicon glyphicon-tags"></i> 主页/投诉总览</a>
+            </li>
+            <li>
+                <a href="#" id="amountbutton"><i class="glyphicon glyphicon-signal"></i> 投诉总量趋势</a>
+            </li>
+            <li>
+                <a href="#" id="areabutton"><i class="glyphicon glyphicon-home"></i> 投诉量地区分布</a>
+            </li>
+            <li>
+                <a href="#" id="departbutton"><i class="glyphicon glyphicon-home"></i> 投诉量部门分布</a>
+            </li>
+            <li>
+                <a href="#" id="typebutton"><i class="glyphicon glyphicon-move"></i> 投诉类别分布</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 办理时效<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Dropdown heading</li>
+                    <li><a href="#" id="areaefficbutton"> 按地区分</a></li>
+                    <li><a href="#" id="departefficbutton"> 按部门分</a></li>
+                    <!--<li><a href="#">部门分布</a></li>-->
+                    <!--<li><a href="#">部门分布</a></li>-->
+                    <!--<li><a href="#">部门分布</a></li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="frombutton"><i class="glyphicon glyphicon-stats"></i> 数据来源排行</a>
+            </li>
+            <li>
+                <a href="#" id="hotspotbutton"><i class="glyphicon glyphicon-heart"></i> 用户热词分析</a>
+            </li>
+            <li>
+                <a href="#">&nbsp;</a>
+            </li>
+            <li>
+                <a href="#">&nbsp;</a>
+            </li>
+            <li >
+                <a href="#"><span class="glyphicon glyphicon-user"></span> 登录</a>
+            </li>
+            <li >
+                <a href="#"><span class="glyphicon glyphicon-tag"></span> 注册</a>
+            </li>
+        </ul>
 
-        </nav>
+    </nav>
 
 
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-                <span class="hamb-middle"></span>
-                <span class="hamb-bottom"></span>
-            </button>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h1 class="page-header"><span id="page-header">投诉线索智能筛查系统</span></h1>
-                        <!--图表区域-->
-                        <div id="mainlist" class="mainlist table">
-                            <table class="table table-striped table-bordered table-hover table-condensed" width="95%">
-                                <thead>
-                                <tr class="active">
-                                    <th width="40px">序号</th>
-                                    <th >投诉内容</th>
-                                    <th width="100px"> 时间</th>
-                                </tr>
-                                </thead>
-                                <tbody id="tbody1">
-                                <!--<tr>-->
-                                    <!--<th>1</th>-->
-                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
-                                    <!--<th>2012.1.1</th>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<th>2</th>-->
-                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
-                                    <!--<th>2012.2.1</th>-->
-                                <!--</tr>-->
-                                <!--<tr>-->
-                                    <!--<th>3</th>-->
-                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
-                                    <!--<th>2012.11.1</th>-->
-                                <!--</tr>-->
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="amount" class="board"></div>
-                        <div id="depart" class="board"></div>
-                        <div id="area" class="board"></div>
-                        <div id="type" class="board"></div>
-                        <div id="departeffic" class="board"></div>
-                        <div id="areaeffic" class="board"></div>
-                        <div id="from" class="board"></div>
-                        <div id="hotspot" class="board"></div>
-                        <!--<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>-->
-
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="page-header"><span id="page-header">投诉线索智能筛查系统</span></h1>
+                    <!--图表区域-->
+                    <div id="mainlist" class="mainlist table">
+                        <table class="table table-striped table-bordered table-hover table-condensed" width="95%">
+                            <thead>
+                            <tr class="active">
+                                <th width="40px">序号</th>
+                                <th >投诉内容</th>
+                                <th width="100px"> 时间</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tbody1">
+                            <!--<tr>-->
+                            <!--<th>1</th>-->
+                            <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                            <!--<th>2012.1.1</th>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                            <!--<th>2</th>-->
+                            <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                            <!--<th>2012.2.1</th>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                            <!--<th>3</th>-->
+                            <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                            <!--<th>2012.11.1</th>-->
+                            <!--</tr>-->
+                            </tbody>
+                        </table>
                     </div>
+                    <div id="amount" class="board"></div>
+                    <div id="depart" class="board"></div>
+                    <div id="area" class="board"></div>
+                    <div id="type" class="board"></div>
+                    <div id="departeffic" class="board"></div>
+                    <div id="areaeffic" class="board"></div>
+                    <div id="from" class="board"></div>
+                    <div id="hotspot" class="board"></div>
+                    <!--<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>-->
+
                 </div>
             </div>
         </div>
-
     </div>
 
+</div>
 
 
-    <!--图表合集-->
-{#    <script src="../static/js/amountchart.js"></script>#}
-    <script src="../static/js/areachart.js"></script>
-    <script src="../static/js/departchart.js"></script>
-{#    <script src="../static/js/departefficchart.js"></script>#}
-{#    <script src="../static/js/areaefficchart.js"></script>#}
-{#    <script src="../static/js/typechart.js"></script>#}
-{#    <script src="../static/js/vendor/worldcloud.js"></script>#}
-{#    <script src="../static/js/hotspotchart.js"></script>#}
-{#    <script src="../static/js/fromchart.js"></script>#}
 
-    <script src="../static/js/vendor/modernizr-3.5.0.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
-    <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
-    <script src="../static/js/plugins.js"></script>
-    <script src="../static/js/main.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var trigger = $('.hamburger'),
-                overlay = $('.overlay'),
-                isClosed = false;
+<!--图表合集-->
+<script src="../static/js/amountchart.js"></script>
+<script src="../static/js/areachart.js"></script>
+<script src="../static/js/departchart.js"></script>
+<script src="../static/js/departefficchart.js"></script>
+<script src="../static/js/areaefficchart.js"></script>
+<!--<script src="../static/js/typechart.js"></script>-->
+<script src="../static/js/vendor/worldcloud.js"></script>
+<!--<script src="../static/js/hotspotchart.js"></script>-->
+<!--<script src="../static/js/fromchart.js"></script>-->
 
-            trigger.click(function () {
-                hamburger_cross();
-            });
 
-            function hamburger_cross() {
+<!--<script src="js/main.js"></script>-->
+<!--<script src="js/amountchart.js"></script>-->
+<!--<script src="js/areachart.js"></script>-->
+<!--<script src="js/areaefficchart.js"></script>-->
+<!--<script src="js/departchart.js"></script>-->
+<!--<script src="js/departefficchart.js"></script>-->
+<!--<script src="js/fromchart.js"></script>-->
+<!--<script src="js/echarts.common.min.js"></script>-->
+<!--<script src="js/hotspotchart.js"></script>-->
+<!--<script src="js/plugins.js"></script>-->
+<!--<script src="js/sidebar.js"></script>-->
+<!--<script src="js/typechart.js"></script>-->
 
-                if (isClosed == true) {
-                    overlay.hide();
-                    trigger.removeClass('is-open');
-                    trigger.addClass('is-closed');
-                    isClosed = false;
-                } else {
-                    overlay.show();
-                    trigger.removeClass('is-closed');
-                    trigger.addClass('is-open');
-                    isClosed = true;
-                }
-            }
 
-            $('[data-toggle="offcanvas"]').click(function () {
-                $('#wrapper').toggleClass('toggled');
-            });
+<script src="../static/js/vendor/modernizr-3.5.0.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+<script src="../static/js/plugins.js"></script>
+<script src="../static/js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+            isClosed = false;
+        trigger.click(function () {
+            hamburger_cross();
         });
-    </script>
+        function hamburger_cross() {
+            if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+    });
+</script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!--<script>-->
-    <!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
-    <!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
-    <!--</script>-->
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--<script>-->
+<!--window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;-->
+<!--ga('create','UA-XXXXX-Y','auto');ga('send','pageview')-->
+<!--</script>-->
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 </html>

@@ -1,50 +1,135 @@
-// amount
-// getdata
-var data1;
-$(document).ready(function(){
-$.get("URL",function(datas, error, code){
-if (code == 200)  alert("数据: " + datas + "\n状态: " + error);
-else if (code == 201)  alert(error);
-data1 = datas;
-})
-// 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('amount'));
-// 指定图表的配置项和数据
-var option = {
-title: {
-text: '投诉总量趋势图'
-},
-tooltip: {},
-legend: {
-data:['数量']
-},
-toolbox: {
-show : true,
-feature : {
-mark : {show: true},
-dataView : {show: true, readOnly: true},
-magicType : {show: true, type: ['line', 'bar']},
-restore : {show: true},
-saveAsImage : {show: true}
-}
-},
-xAxis: {
-// data: data1.times,
-data: ["2019.4.1","2019.4.2","2019.4.3","2019.4.4","2019.4.5","2019.4.6","2019.4.7"]
-},
-yAxis: {},
-series: [{
-name: '数量',
-type: 'line',
-// data: data1.amount,
-data: [5, 20, 36, 10, 10, 20, 3],
-markLine : {
-data : [
-{type : 'average', name: '平均值'}
-]
-}
-}]
-};
-// 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
-});
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="head">
+    <ul>
+        <li>cddasdf。com</li>
+
+        <li style="background:transparent;position:absolute;left: 95%;top:20px;;">2008/2.2</li>
+
+    </ul>
+</div>
+<div class="pic">
+    <table background="../static/img/1289585790.jpg"
+           style="background-image:url(1375308878.jpg);background-repeat: no-repeat;">
+
+        <tr>
+            <td class="tra">lllllllllllllllll</td>
+            <td>lllllllllllllllll</td>
+            <td class="tra">lllllllllllllll</td>
+        </tr>
+    </table>
+
+</div>
+<div class="kkk">
+    <h2 style="font: 1em sans-serif; font-style: italic;">
+        dshfalksdfa dafasdfadasdfa<br>
+        asdfasdf<br>
+    </h2>
+    <p>
+        alsdjhalsudhfakjsdhfalsdf
+    </p>
+    <h1>700</h1>
+    <h2 style="color: maroon;float: left;">3.2</h2>
+    <h3 style="color: maroon;position: relative;">3.2</h3>
+</div>
+<div class=" z1">
+    <h2>skdflasdfa</h2>
+    asdjkfahlksdafhkjsdfa
+</div>
+<div class="z1">
+    <h2>skdflasdfa</h2>
+    asdjkfahlksdafhkjsdfa
+</div>
+<div class="z1">
+    <h2>skdflasdfa</h2>
+    asdjkfahlksdafhkjsdfa
+</div>
+<div class="c">
+    <h1 style="color:mediumaquamarine">干，为什么这一块放不下去sdfahkjdf</h1>
+    sjdkhfaljksdfajnd
+    <h2>sadfhlkhsdfla</h2>
+</div>
+
+
+
+
+<div>
+
+
+    <div>
+        <p>
+            四条 适用刑法人人平等
+            对任何人犯罪，在适用法律上一律平等。不允许任何人有超越法律的特权。
+            第五条 罪责刑相适应
+            刑罚的轻重，应当与犯罪分子所犯罪行和承担的刑事责任相适应。
+            第六条 属地管辖权
+            凡在中华人民共和国领域内犯罪的，除法律有特别规定的以外，都适用本法。 凡在中华人民共和国船舶或者航空器内犯罪的，也适用本法。
+            犯罪的行为或者结果有一项发生在中华人民共和国领域内的，就认为是在中华人民共和国领域内犯罪。
+            第七条 属人管辖权
+            中华人民共和国公民在中华人民共和国领域外犯本法规定之罪的，适用本法，但是按本法规定的最高刑为三年以下有期徒刑的，可以不予追
+        </p>
+    </div>
+    <div>
+        <table background="../static/img/2142840063.jpg" style="width:300px;height:300px;float: right;">
+            <tr>
+
+
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td class="tra">
+                    <p style="color:green">sdfasdfasdf</p>去的撒法纪录时刻提防哈里斯地方
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </table>
+
+    </div>
+    <div class="dd">
+        <table style="background-color:gold;height: 200px;width:200px;float: right;">
+            <tr>
+                <td colspan="2">sadfdsagagfagdasdf</td>
+            </tr>
+            <tr>
+                <td style="background-color:black;color: wheat;">
+                    <h1>safdaf</h1></span>
+                </td>
+                <td><span style="font-size:large;color:tomato;">p</span>gaaaaaaaaaaadf</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<script src="" async defer></script>
+</body>
+
+</html>

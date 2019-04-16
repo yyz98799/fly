@@ -11,9 +11,10 @@ class Fly(models.Model):
     department = models.CharField(max_length=40)
     area = models.CharField(max_length=20)
     url = models.CharField(max_length=255)
-    _content = models.TextField
-    ans_content = models.TextField
+    _content = models.TextField(blank=True)
+    ans_content = models.TextField(blank=True)
     type = models.CharField(max_length=50)
-    summary = models.TextField
-    ner = models.TextField
-    keyword = models.TextField
+    summary = models.TextField(blank=True)
+    ner = models.TextField(blank=True)
+    keyword = models.TextField(blank=True)
+
